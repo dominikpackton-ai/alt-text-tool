@@ -37,7 +37,7 @@ app.post("/extract", async (req, res) => {
 function generateAlt(imgUrl) {
     let name = imgUrl.split("/").pop().split(".")[0];
     name = name.replace(/[-_]/g, " ");
-    return "Image of " + name;
+    return name + " image for SEO optimization";
 }
 
 app.listen(3000, () => console.log("Server running"));
